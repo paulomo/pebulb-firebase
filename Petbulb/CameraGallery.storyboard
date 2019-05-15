@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6D5-8b-lGi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--GALLERY-->
+        <scene sceneID="qta-Sc-L04">
+            <objects>
+                <viewController id="bP8-ed-bCm" customClass="CameraGalleyPhotoVC" customModule="Petbulb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qJ6-ai-FW7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Petbulb Bacground Main" translatesAutoresizingMaskIntoConstraints="NO" id="ylm-mz-A4n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ZE-b3-p74">
+                                <rect key="frame" x="0.0" y="72" width="375" height="130"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xGB-d3-kha">
+                                        <rect key="frame" x="10" y="10" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="Dka-xW-vgc"/>
+                                            <constraint firstAttribute="width" constant="110" id="Vke-y5-Zp3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q21-u3-ipv">
+                                        <rect key="frame" x="130" y="0.0" width="235" height="120"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="6w6-Bj-HML"/>
+                                    <constraint firstItem="q21-u3-ipv" firstAttribute="leading" secondItem="xGB-d3-kha" secondAttribute="trailing" constant="10" id="JZM-sh-RkV"/>
+                                    <constraint firstItem="xGB-d3-kha" firstAttribute="top" secondItem="3ZE-b3-p74" secondAttribute="top" constant="10" id="LIE-R9-f14"/>
+                                    <constraint firstAttribute="bottom" secondItem="xGB-d3-kha" secondAttribute="bottom" constant="10" id="MX0-Li-tjp"/>
+                                    <constraint firstAttribute="trailing" secondItem="q21-u3-ipv" secondAttribute="trailing" constant="10" id="O5w-bQ-Squ"/>
+                                    <constraint firstItem="q21-u3-ipv" firstAttribute="leading" secondItem="xGB-d3-kha" secondAttribute="trailing" constant="10" id="huk-Ra-jnN"/>
+                                    <constraint firstItem="xGB-d3-kha" firstAttribute="leading" secondItem="3ZE-b3-p74" secondAttribute="leading" constant="10" id="iQX-vK-yU9"/>
+                                    <constraint firstAttribute="bottom" secondItem="q21-u3-ipv" secondAttribute="bottom" constant="10" id="jJJ-br-JPt"/>
+                                    <constraint firstItem="q21-u3-ipv" firstAttribute="top" secondItem="3ZE-b3-p74" secondAttribute="top" id="lRW-O6-bi8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ylm-mz-A4n" secondAttribute="trailing" id="F1Z-Px-dyq"/>
+                            <constraint firstItem="ylm-mz-A4n" firstAttribute="leading" secondItem="qJ6-ai-FW7" secondAttribute="leading" id="JPf-IE-MIg"/>
+                            <constraint firstItem="ylm-mz-A4n" firstAttribute="top" secondItem="qJ6-ai-FW7" secondAttribute="top" id="LOV-dr-ybV"/>
+                            <constraint firstItem="3ZE-b3-p74" firstAttribute="top" secondItem="IjL-f8-YxE" secondAttribute="top" constant="8" id="NRA-96-rZ7"/>
+                            <constraint firstAttribute="trailing" secondItem="3ZE-b3-p74" secondAttribute="trailing" id="OuQ-r8-tQo"/>
+                            <constraint firstItem="3ZE-b3-p74" firstAttribute="leading" secondItem="qJ6-ai-FW7" secondAttribute="leading" id="WmP-7K-USU"/>
+                            <constraint firstAttribute="bottom" secondItem="ylm-mz-A4n" secondAttribute="bottom" id="zKJ-CC-Zpl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IjL-f8-YxE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GALLERY" id="P3w-NZ-NPe">
+                        <barButtonItem key="rightBarButtonItem" id="DYS-Sd-z4z">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kDp-ch-dqz">
+                                <rect key="frame" x="324" y="3.5" width="35" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postButton_Pressed:" destination="bP8-ed-bCm" eventType="touchUpInside" id="sDD-fo-b3i"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="captionTextToPost" destination="q21-u3-ipv" id="iCZ-Rq-O0W"/>
+                        <outlet property="imageSelectedToPost" destination="xGB-d3-kha" id="zYj-3M-F7L"/>
+                        <outlet property="postButton" destination="kDp-ch-dqz" id="64A-BI-zt2"/>
+                        <outlet property="viewForImageAndTextInput" destination="3ZE-b3-p74" id="1wE-7h-JlV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTv-Tc-noQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="1007.0464767616193"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WdR-Ud-YJO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6D5-8b-lGi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nYt-51-Uvw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bP8-ed-bCm" kind="relationship" relationship="rootViewController" id="HTc-Lw-Elz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8JP-xo-fdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-761" y="1011"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Petbulb Bacground Main" width="375" height="665"/>
+    </resources>
+</document>

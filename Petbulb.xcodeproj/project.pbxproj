@@ -1,0 +1,1706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07B8362F9AEB4B1C21E57A1E /* Pods_Petbulb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C2111BA96CF749007F1040 /* Pods_Petbulb.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		35653E6B463C032654756CDE /* Pods_PetbulbTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C130DB4D1FBE9DAE007DC362 /* Pods_PetbulbTests.framework */; };
+		4EDD9E1FC1A54D967BCE8C6F /* Pods_PetbulbTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8BC66BACA267C72EDB4F0E /* Pods_PetbulbTests.framework */; };
+		A52099018866D8951E6F4996 /* Pods_PetbulbUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C130DB4F1FBE9DB8007DC362 /* Pods_PetbulbUITests.framework */; };
+		C1054DD91F9A85510004AB02 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DD81F9A85510004AB02 /* Pet.swift */; };
+		C1054DDA1F9A85510004AB02 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DD81F9A85510004AB02 /* Pet.swift */; };
+		C1054DDB1F9A85510004AB02 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DD81F9A85510004AB02 /* Pet.swift */; };
+		C1054DDE1F9A87410004AB02 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DDD1F9A87410004AB02 /* Gender.swift */; };
+		C1054DDF1F9A87410004AB02 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DDD1F9A87410004AB02 /* Gender.swift */; };
+		C1054DE01F9A87410004AB02 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DDD1F9A87410004AB02 /* Gender.swift */; };
+		C1054DE21F9A88360004AB02 /* PetPersonality.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DE11F9A88360004AB02 /* PetPersonality.swift */; };
+		C1054DE31F9A88360004AB02 /* PetPersonality.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DE11F9A88360004AB02 /* PetPersonality.swift */; };
+		C1054DE41F9A88360004AB02 /* PetPersonality.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DE11F9A88360004AB02 /* PetPersonality.swift */; };
+		C1054DE71F9A89BE0004AB02 /* PetOwners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DE61F9A89BE0004AB02 /* PetOwners.swift */; };
+		C1054DE81F9A89BE0004AB02 /* PetOwners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DE61F9A89BE0004AB02 /* PetOwners.swift */; };
+		C1054DE91F9A89BE0004AB02 /* PetOwners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DE61F9A89BE0004AB02 /* PetOwners.swift */; };
+		C1054DEB1F9A8B9E0004AB02 /* Professions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DEA1F9A8B9E0004AB02 /* Professions.swift */; };
+		C1054DEC1F9A8B9E0004AB02 /* Professions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DEA1F9A8B9E0004AB02 /* Professions.swift */; };
+		C1054DED1F9A8B9E0004AB02 /* Professions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1054DEA1F9A8B9E0004AB02 /* Professions.swift */; };
+		C114175A1FC7144000AEA4A6 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C114175B1FC7144000AEA4A6 /* Kingfisher.framework */; };
+		C114175C1FC71A1900AEA4A6 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C114175D1FC71A1900AEA4A6 /* GTMSessionFetcher.framework */; };
+		C114175E1FC71A3500AEA4A6 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C114175F1FC71A3500AEA4A6 /* GoogleToolboxForMac.framework */; };
+		C11417601FC71A5000AEA4A6 /* leveldb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11417611FC71A5000AEA4A6 /* leveldb.framework */; };
+		C11417621FC71A5800AEA4A6 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11417631FC71A5800AEA4A6 /* nanopb.framework */; };
+		C11417671FC7208400AEA4A6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3FBAD1FBF6CE50092BA23 /* CustomTextField.swift */; };
+		C11417681FC7208500AEA4A6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3FBAD1FBF6CE50092BA23 /* CustomTextField.swift */; };
+		C11803031FE18DDB00B5597F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11803021FE18DDB00B5597F /* Post.swift */; };
+		C11803091FE2DBFA00B5597F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11803081FE2DBF900B5597F /* HomeTableViewCell.swift */; };
+		C118030A1FE2DC0C00B5597F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11803081FE2DBF900B5597F /* HomeTableViewCell.swift */; };
+		C118030B1FE2DC0C00B5597F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11803081FE2DBF900B5597F /* HomeTableViewCell.swift */; };
+		C12E8E4A1FDF2AA30001D14D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E8E491FDF2AA30001D14D /* Config.swift */; };
+		C12E8E4C1FDF2F570001D14D /* CameraGallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12E8E4B1FDF2F570001D14D /* CameraGallery.storyboard */; };
+		C130DB4B1FBE9D9C007DC362 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C130DB4A1FBE9D9B007DC362 /* SafariServices.framework */; };
+		C130DB4C1FBE9DAE007DC362 /* Pods_PetbulbTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C130DB4D1FBE9DAE007DC362 /* Pods_PetbulbTests.framework */; };
+		C130DB4E1FBE9DB8007DC362 /* Pods_PetbulbUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C130DB4F1FBE9DB8007DC362 /* Pods_PetbulbUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C136289720211C5C0085FAB1 /* AdviceTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136289620211C5C0085FAB1 /* AdviceTableCell.swift */; };
+		C168BB8B1FBA186C003DB0A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BB8A1FBA186C003DB0A7 /* Main.storyboard */; };
+		C168BB8C1FBA186C003DB0A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BB8A1FBA186C003DB0A7 /* Main.storyboard */; };
+		C168BB8D1FBA186C003DB0A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BB8A1FBA186C003DB0A7 /* Main.storyboard */; };
+		C168BB8F1FBA1B33003DB0A7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB8E1FBA1B33003DB0A7 /* HomeVC.swift */; };
+		C168BB901FBA1B33003DB0A7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB8E1FBA1B33003DB0A7 /* HomeVC.swift */; };
+		C168BB911FBA1B33003DB0A7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB8E1FBA1B33003DB0A7 /* HomeVC.swift */; };
+		C168BB931FBA1B62003DB0A7 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB921FBA1B62003DB0A7 /* SearchVC.swift */; };
+		C168BB941FBA1B62003DB0A7 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB921FBA1B62003DB0A7 /* SearchVC.swift */; };
+		C168BB951FBA1B62003DB0A7 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB921FBA1B62003DB0A7 /* SearchVC.swift */; };
+		C168BB971FBA1B8C003DB0A7 /* DealsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB961FBA1B8C003DB0A7 /* DealsVC.swift */; };
+		C168BB981FBA1B8C003DB0A7 /* DealsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB961FBA1B8C003DB0A7 /* DealsVC.swift */; };
+		C168BB991FBA1B8C003DB0A7 /* DealsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB961FBA1B8C003DB0A7 /* DealsVC.swift */; };
+		C168BB9B1FBA1BAD003DB0A7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB9A1FBA1BAD003DB0A7 /* ProfileVC.swift */; };
+		C168BB9C1FBA1BAD003DB0A7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB9A1FBA1BAD003DB0A7 /* ProfileVC.swift */; };
+		C168BB9D1FBA1BAD003DB0A7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BB9A1FBA1BAD003DB0A7 /* ProfileVC.swift */; };
+		C168BBAC1FBA25B9003DB0A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBAB1FBA25B9003DB0A7 /* Home.storyboard */; };
+		C168BBAD1FBA25B9003DB0A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBAB1FBA25B9003DB0A7 /* Home.storyboard */; };
+		C168BBAE1FBA25B9003DB0A7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBAB1FBA25B9003DB0A7 /* Home.storyboard */; };
+		C168BBB31FBA2607003DB0A7 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBB21FBA2607003DB0A7 /* Search.storyboard */; };
+		C168BBB41FBA2607003DB0A7 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBB21FBA2607003DB0A7 /* Search.storyboard */; };
+		C168BBB51FBA2607003DB0A7 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBB21FBA2607003DB0A7 /* Search.storyboard */; };
+		C168BBBB1FBA2679003DB0A7 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBBA1FBA2679003DB0A7 /* Profile.storyboard */; };
+		C168BBBC1FBA2679003DB0A7 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBBA1FBA2679003DB0A7 /* Profile.storyboard */; };
+		C168BBBD1FBA2679003DB0A7 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBBA1FBA2679003DB0A7 /* Profile.storyboard */; };
+		C168BBC71FBA272E003DB0A7 /* Deals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBC61FBA272E003DB0A7 /* Deals.storyboard */; };
+		C168BBC81FBA272E003DB0A7 /* Deals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBC61FBA272E003DB0A7 /* Deals.storyboard */; };
+		C168BBC91FBA272E003DB0A7 /* Deals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C168BBC61FBA272E003DB0A7 /* Deals.storyboard */; };
+		C16DC06A1FCC82BB00DFBCAD /* CameraPhoto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0691FCC82BB00DFBCAD /* CameraPhoto.storyboard */; };
+		C16DC06B1FCC82BB00DFBCAD /* CameraPhoto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0691FCC82BB00DFBCAD /* CameraPhoto.storyboard */; };
+		C16DC06C1FCC82BB00DFBCAD /* CameraPhoto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0691FCC82BB00DFBCAD /* CameraPhoto.storyboard */; };
+		C16DC06E1FCC86DA00DFBCAD /* CameraPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC06D1FCC86DA00DFBCAD /* CameraPhotoVC.swift */; };
+		C16DC06F1FCC86DA00DFBCAD /* CameraPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC06D1FCC86DA00DFBCAD /* CameraPhotoVC.swift */; };
+		C16DC0701FCC86DA00DFBCAD /* CameraPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC06D1FCC86DA00DFBCAD /* CameraPhotoVC.swift */; };
+		C16DC0721FCC8BFD00DFBCAD /* CameraText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0711FCC8BFD00DFBCAD /* CameraText.storyboard */; };
+		C16DC0731FCC8BFD00DFBCAD /* CameraText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0711FCC8BFD00DFBCAD /* CameraText.storyboard */; };
+		C16DC0741FCC8BFD00DFBCAD /* CameraText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0711FCC8BFD00DFBCAD /* CameraText.storyboard */; };
+		C16DC0761FCC8C1700DFBCAD /* CameraVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0751FCC8C1700DFBCAD /* CameraVideo.storyboard */; };
+		C16DC0771FCC8C1700DFBCAD /* CameraVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0751FCC8C1700DFBCAD /* CameraVideo.storyboard */; };
+		C16DC0781FCC8C1700DFBCAD /* CameraVideo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0751FCC8C1700DFBCAD /* CameraVideo.storyboard */; };
+		C16DC07A1FCC8C2E00DFBCAD /* CameraAdvice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0791FCC8C2E00DFBCAD /* CameraAdvice.storyboard */; };
+		C16DC07B1FCC8C2E00DFBCAD /* CameraAdvice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0791FCC8C2E00DFBCAD /* CameraAdvice.storyboard */; };
+		C16DC07C1FCC8C2E00DFBCAD /* CameraAdvice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16DC0791FCC8C2E00DFBCAD /* CameraAdvice.storyboard */; };
+		C16DC07E1FCC8C5B00DFBCAD /* CameraTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC07D1FCC8C5B00DFBCAD /* CameraTextVC.swift */; };
+		C16DC07F1FCC8C5B00DFBCAD /* CameraTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC07D1FCC8C5B00DFBCAD /* CameraTextVC.swift */; };
+		C16DC0801FCC8C5B00DFBCAD /* CameraTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC07D1FCC8C5B00DFBCAD /* CameraTextVC.swift */; };
+		C16DC0821FCC8C7A00DFBCAD /* CameraVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC0811FCC8C7A00DFBCAD /* CameraVideoVC.swift */; };
+		C16DC0831FCC8C7A00DFBCAD /* CameraVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC0811FCC8C7A00DFBCAD /* CameraVideoVC.swift */; };
+		C16DC0841FCC8C7A00DFBCAD /* CameraVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC0811FCC8C7A00DFBCAD /* CameraVideoVC.swift */; };
+		C16DC0861FCC8C9200DFBCAD /* CameraAdviceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC0851FCC8C9200DFBCAD /* CameraAdviceVC.swift */; };
+		C16DC0871FCC8C9200DFBCAD /* CameraAdviceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC0851FCC8C9200DFBCAD /* CameraAdviceVC.swift */; };
+		C16DC0881FCC8C9200DFBCAD /* CameraAdviceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16DC0851FCC8C9200DFBCAD /* CameraAdviceVC.swift */; };
+		C172ED081FDB12CC00180955 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172ED071FDB12CC00180955 /* AuthService.swift */; };
+		C1795B621F9A46060036AD8D /* BaseRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1795B611F9A46060036AD8D /* BaseRoundedButton.swift */; };
+		C1795B641F9A46B40036AD8D /* BaseRoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1795B631F9A46B40036AD8D /* BaseRoundedLabel.swift */; };
+		C17A14001FE31B4F0082810C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17A13FF1FE31B4F0082810C /* User.swift */; };
+		C17C4D491FD5D2A800361E12 /* CameraGalleyPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4D481FD5D2A800361E12 /* CameraGalleyPhotoVC.swift */; };
+		C17C4D4B1FD5DEB000361E12 /* CameraPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17C4D4A1FD5DEB000361E12 /* CameraPreviewVC.swift */; };
+		C17C4D4C1FD5FD5B00361E12 /* BaseRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1795B611F9A46060036AD8D /* BaseRoundedButton.swift */; };
+		C17C4D4D1FD5FD5B00361E12 /* BaseRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1795B611F9A46060036AD8D /* BaseRoundedButton.swift */; };
+		C17C4D4E1FD74A5200361E12 /* ProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17C4D4F1FD74A5200361E12 /* ProgressHUD.framework */; };
+		C1816D4420194446009389BD /* TextTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1816D4320194446009389BD /* TextTableCell.swift */; };
+		C194345D1FB165BE0007E275 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C194345C1FB165BE0007E275 /* SignIn.storyboard */; };
+		C194345E1FB165BE0007E275 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C194345C1FB165BE0007E275 /* SignIn.storyboard */; };
+		C194345F1FB165BE0007E275 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C194345C1FB165BE0007E275 /* SignIn.storyboard */; };
+		C19434621FB165DC0007E275 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19434611FB165DC0007E275 /* SignUp.storyboard */; };
+		C19434631FB165DC0007E275 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19434611FB165DC0007E275 /* SignUp.storyboard */; };
+		C19434641FB165DC0007E275 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19434611FB165DC0007E275 /* SignUp.storyboard */; };
+		C194346A1FB166340007E275 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19434691FB166340007E275 /* SignUpVC.swift */; };
+		C194346B1FB166340007E275 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19434691FB166340007E275 /* SignUpVC.swift */; };
+		C194346C1FB166340007E275 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19434691FB166340007E275 /* SignUpVC.swift */; };
+		C19434721FB167640007E275 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19434711FB167640007E275 /* ForgotPassword.storyboard */; };
+		C19434731FB167640007E275 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19434711FB167640007E275 /* ForgotPassword.storyboard */; };
+		C19434741FB167640007E275 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19434711FB167640007E275 /* ForgotPassword.storyboard */; };
+		C19434761FB1678A0007E275 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19434751FB1678A0007E275 /* ForgotPasswordVC.swift */; };
+		C19434771FB1678A0007E275 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19434751FB1678A0007E275 /* ForgotPasswordVC.swift */; };
+		C19434781FB1678A0007E275 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19434751FB1678A0007E275 /* ForgotPasswordVC.swift */; };
+		C19558341FB10F88007923DE /* PetName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19558331FB10F88007923DE /* PetName.storyboard */; };
+		C1A1A11E1FBCC697004F97B6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F2DFF61F337CC3001CD765 /* Info.plist */; };
+		C1A1A11F1FBCC697004F97B6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F2DFF61F337CC3001CD765 /* Info.plist */; };
+		C1AE75801F993EE5000455BD /* PetBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AE757F1F993EE5000455BD /* PetBreed.swift */; };
+		C1AE75821F9949B8000455BD /* PetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AE75811F9949B8000455BD /* PetType.swift */; };
+		C1C921301FCE3BA700997C20 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C9212F1FCE3BA700997C20 /* DataServices.swift */; };
+		C1C921321FCE41ED00997C20 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C921311FCE41ED00997C20 /* CustomImageView.swift */; };
+		C1D3F2A4200B243800B5CD3A /* UserDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D3F2A3200B243800B5CD3A /* UserDetails.storyboard */; };
+		C1D3F2A6200B247200B5CD3A /* UserDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D3F2A5200B247200B5CD3A /* UserDetailsVC.swift */; };
+		C1E301761FE44DC10096131E /* Comment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E301751FE44DC10096131E /* Comment.storyboard */; };
+		C1E301781FE44DFF0096131E /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E301771FE44DFF0096131E /* CommentVC.swift */; };
+		C1E3FBAE1FBF6CE50092BA23 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E3FBAD1FBF6CE50092BA23 /* CustomTextField.swift */; };
+		C1E517161F93078F00CB7117 /* PetType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E517151F93078F00CB7117 /* PetType.storyboard */; };
+		C1E517171F93078F00CB7117 /* PetType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E517151F93078F00CB7117 /* PetType.storyboard */; };
+		C1E517181F93078F00CB7117 /* PetType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E517151F93078F00CB7117 /* PetType.storyboard */; };
+		C1E517201F930A6100CB7117 /* PetTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E5171F1F930A6100CB7117 /* PetTypeVC.swift */; };
+		C1E517211F930A6100CB7117 /* PetTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E5171F1F930A6100CB7117 /* PetTypeVC.swift */; };
+		C1E517221F930A6100CB7117 /* PetTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E5171F1F930A6100CB7117 /* PetTypeVC.swift */; };
+		C1E5172C1F931FF000CB7117 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E5172B1F931FF000CB7117 /* CircularTransition.swift */; };
+		C1E5172D1F931FF000CB7117 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E5172B1F931FF000CB7117 /* CircularTransition.swift */; };
+		C1E5172E1F931FF000CB7117 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E5172B1F931FF000CB7117 /* CircularTransition.swift */; };
+		C1EB36B31F3D4B1600E36AC4 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1EB36B21F3D4B1600E36AC4 /* Roboto-Regular.ttf */; };
+		C1EB36B41F3D4B1600E36AC4 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1EB36B21F3D4B1600E36AC4 /* Roboto-Regular.ttf */; };
+		C1EB36B51F3D4B1600E36AC4 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1EB36B21F3D4B1600E36AC4 /* Roboto-Regular.ttf */; };
+		C1EB36B71F3D4B3700E36AC4 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1EB36B61F3D4B3700E36AC4 /* Roboto-Light.ttf */; };
+		C1EB36B91F3D4B5C00E36AC4 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1EB36B81F3D4B5C00E36AC4 /* Roboto-Thin.ttf */; };
+		C1EB36BA1F3D4B5C00E36AC4 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1EB36B81F3D4B5C00E36AC4 /* Roboto-Thin.ttf */; };
+		C1EB36BB1F3D4B5C00E36AC4 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1EB36B81F3D4B5C00E36AC4 /* Roboto-Thin.ttf */; };
+		C1EB36BD1F3D4B7100E36AC4 /* Roboto-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1EB36BC1F3D4B7100E36AC4 /* Roboto-Condensed.ttf */; };
+		C1EB36BE1F3D4B7100E36AC4 /* Roboto-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1EB36BC1F3D4B7100E36AC4 /* Roboto-Condensed.ttf */; };
+		C1EB36BF1F3D4B7100E36AC4 /* Roboto-Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1EB36BC1F3D4B7100E36AC4 /* Roboto-Condensed.ttf */; };
+		C1F0B6D31FCF160200077F65 /* CameraPreviewVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0B6D21FCF160100077F65 /* CameraPreviewVideoVC.swift */; };
+		C1F0B6D41FCF160200077F65 /* CameraPreviewVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0B6D21FCF160100077F65 /* CameraPreviewVideoVC.swift */; };
+		C1F0B6D51FCF160200077F65 /* CameraPreviewVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0B6D21FCF160100077F65 /* CameraPreviewVideoVC.swift */; };
+		C1F0B6D71FCF2B2500077F65 /* CustomImageViewII.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0B6D61FCF2B2500077F65 /* CustomImageViewII.swift */; };
+		C1F2DFE81F337CC2001CD765 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F2DFE71F337CC2001CD765 /* AppDelegate.swift */; };
+		C1F2DFF01F337CC3001CD765 /* Petbulb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1F2DFEE1F337CC3001CD765 /* Petbulb.xcdatamodeld */; };
+		C1F2DFF21F337CC3001CD765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F2DFF11F337CC3001CD765 /* Assets.xcassets */; };
+		C1F2DFF51F337CC3001CD765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F2DFF31F337CC3001CD765 /* LaunchScreen.storyboard */; };
+		C1F2E0001F337CC3001CD765 /* PetbulbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F2DFFF1F337CC3001CD765 /* PetbulbTests.swift */; };
+		C1F2E00B1F337CC3001CD765 /* PetbulbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F2E00A1F337CC3001CD765 /* PetbulbUITests.swift */; };
+		C1F5845D1FB8FB06008B30EE /* LoginWithEmail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F5845C1FB8FB06008B30EE /* LoginWithEmail.storyboard */; };
+		C1F5845E1FB8FB06008B30EE /* LoginWithEmail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F5845C1FB8FB06008B30EE /* LoginWithEmail.storyboard */; };
+		C1F5845F1FB8FB06008B30EE /* LoginWithEmail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F5845C1FB8FB06008B30EE /* LoginWithEmail.storyboard */; };
+		C1F584611FB8FE84008B30EE /* LoginWIthEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F584601FB8FE84008B30EE /* LoginWIthEmailVC.swift */; };
+		C1F584621FB8FE84008B30EE /* LoginWIthEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F584601FB8FE84008B30EE /* LoginWIthEmailVC.swift */; };
+		C1F584631FB8FE84008B30EE /* LoginWIthEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F584601FB8FE84008B30EE /* LoginWIthEmailVC.swift */; };
+		C1F6C16C1FC8856D00E0C287 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F6C16B1FC8856D00E0C287 /* SignInVC.swift */; };
+		C1F6C16D1FC8856D00E0C287 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F6C16B1FC8856D00E0C287 /* SignInVC.swift */; };
+		C1F6C16E1FC8856D00E0C287 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F6C16B1FC8856D00E0C287 /* SignInVC.swift */; };
+		C1FA360D1FB49AE000D8D22F /* OnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FA360C1FB49AE000D8D22F /* OnboardingPageVC.swift */; };
+		C1FA360E1FB49AE000D8D22F /* OnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FA360C1FB49AE000D8D22F /* OnboardingPageVC.swift */; };
+		C1FA360F1FB49AE000D8D22F /* OnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FA360C1FB49AE000D8D22F /* OnboardingPageVC.swift */; };
+		C1FA36111FB49B3200D8D22F /* OnboardingVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FA36101FB49B3200D8D22F /* OnboardingVC.storyboard */; };
+		C1FA36121FB49B3200D8D22F /* OnboardingVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FA36101FB49B3200D8D22F /* OnboardingVC.storyboard */; };
+		C1FA36131FB49B3200D8D22F /* OnboardingVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FA36101FB49B3200D8D22F /* OnboardingVC.storyboard */; };
+		C1FA36151FB4F8B900D8D22F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1FA36141FB4F8B800D8D22F /* GoogleService-Info.plist */; };
+		C1FA36161FB4F8B900D8D22F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1FA36141FB4F8B800D8D22F /* GoogleService-Info.plist */; };
+		C1FA36171FB4F8B900D8D22F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1FA36141FB4F8B800D8D22F /* GoogleService-Info.plist */; };
+		C1FB2E321FA0DC82000239B5 /* PetNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FB2E311FA0DC82000239B5 /* PetNameVC.swift */; };
+		C1FB2E331FA0DC82000239B5 /* PetNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FB2E311FA0DC82000239B5 /* PetNameVC.swift */; };
+		C1FB2E341FA0DC82000239B5 /* PetNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FB2E311FA0DC82000239B5 /* PetNameVC.swift */; };
+		C1FE4EF81FBE23FE00ACE1E2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FE4EF91FBE23FE00ACE1E2 /* Bolts.framework */; };
+		C1FE4EFA1FBE244600ACE1E2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FE4EFB1FBE244600ACE1E2 /* SwiftyJSON.framework */; };
+		C1FE4EFC1FBE246000ACE1E2 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FE4F001FBE246000ACE1E2 /* FacebookCore.framework */; };
+		C1FE4EFD1FBE246000ACE1E2 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FE4F011FBE246000ACE1E2 /* FacebookLogin.framework */; };
+		C1FE4EFE1FBE246000ACE1E2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FE4F021FBE246000ACE1E2 /* FBSDKCoreKit.framework */; };
+		C1FE4EFF1FBE246000ACE1E2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FE4F031FBE246000ACE1E2 /* FBSDKLoginKit.framework */; };
+		C1FE4F051FBE2ED300ACE1E2 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE4F041FBE2ED300ACE1E2 /* OnboardingVC.swift */; };
+		D38436B8AEA67C2280CF8AC0 /* Pods_PetbulbUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 802B483B6035FF82BFDA94F0 /* Pods_PetbulbUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1F2DFFC1F337CC3001CD765 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1F2DFDC1F337CC2001CD765 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1F2DFE31F337CC2001CD765;
+			remoteInfo = Petbulb;
+		};
+		C1F2E0071F337CC3001CD765 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1F2DFDC1F337CC2001CD765 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1F2DFE31F337CC2001CD765;
+			remoteInfo = Petbulb;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21F4834C10E172A06CAE1EA4 /* Pods-Petbulb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petbulb.release.xcconfig"; path = "Pods/Target Support Files/Pods-Petbulb/Pods-Petbulb.release.xcconfig"; sourceTree = "<group>"; };
+		3750A5D38FD1FAE780BD42E7 /* Pods-Petbulb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petbulb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Petbulb/Pods-Petbulb.debug.xcconfig"; sourceTree = "<group>"; };
+		60C2111BA96CF749007F1040 /* Pods_Petbulb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Petbulb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		802B483B6035FF82BFDA94F0 /* Pods_PetbulbUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetbulbUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8BC66BACA267C72EDB4F0E /* Pods_PetbulbTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetbulbTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1054DD81F9A85510004AB02 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		C1054DDD1F9A87410004AB02 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		C1054DE11F9A88360004AB02 /* PetPersonality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetPersonality.swift; sourceTree = "<group>"; };
+		C1054DE61F9A89BE0004AB02 /* PetOwners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetOwners.swift; sourceTree = "<group>"; };
+		C1054DEA1F9A8B9E0004AB02 /* Professions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professions.swift; sourceTree = "<group>"; };
+		C114175B1FC7144000AEA4A6 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C114175D1FC71A1900AEA4A6 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C114175F1FC71A3500AEA4A6 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11417611FC71A5000AEA4A6 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11417631FC71A5800AEA4A6 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11417641FC71C9B00AEA4A6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C11803021FE18DDB00B5597F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C11803081FE2DBF900B5597F /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		C12E8E491FDF2AA30001D14D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		C12E8E4B1FDF2F570001D14D /* CameraGallery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CameraGallery.storyboard; sourceTree = "<group>"; };
+		C130DB4A1FBE9D9B007DC362 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		C130DB4D1FBE9DAE007DC362 /* Pods_PetbulbTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_PetbulbTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C130DB4F1FBE9DB8007DC362 /* Pods_PetbulbUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_PetbulbUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C136289620211C5C0085FAB1 /* AdviceTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceTableCell.swift; sourceTree = "<group>"; };
+		C168BB8A1FBA186C003DB0A7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C168BB8E1FBA1B33003DB0A7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C168BB921FBA1B62003DB0A7 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		C168BB961FBA1B8C003DB0A7 /* DealsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsVC.swift; sourceTree = "<group>"; };
+		C168BB9A1FBA1BAD003DB0A7 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileVC.swift; path = ../../ProfileVC.swift; sourceTree = "<group>"; };
+		C168BBAB1FBA25B9003DB0A7 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C168BBB21FBA2607003DB0A7 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		C168BBBA1FBA2679003DB0A7 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		C168BBC61FBA272E003DB0A7 /* Deals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Deals.storyboard; sourceTree = "<group>"; };
+		C16DC0691FCC82BB00DFBCAD /* CameraPhoto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraPhoto.storyboard; sourceTree = "<group>"; };
+		C16DC06D1FCC86DA00DFBCAD /* CameraPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPhotoVC.swift; sourceTree = "<group>"; };
+		C16DC0711FCC8BFD00DFBCAD /* CameraText.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraText.storyboard; sourceTree = "<group>"; };
+		C16DC0751FCC8C1700DFBCAD /* CameraVideo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraVideo.storyboard; sourceTree = "<group>"; };
+		C16DC0791FCC8C2E00DFBCAD /* CameraAdvice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraAdvice.storyboard; sourceTree = "<group>"; };
+		C16DC07D1FCC8C5B00DFBCAD /* CameraTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraTextVC.swift; sourceTree = "<group>"; };
+		C16DC0811FCC8C7A00DFBCAD /* CameraVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVideoVC.swift; sourceTree = "<group>"; };
+		C16DC0851FCC8C9200DFBCAD /* CameraAdviceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAdviceVC.swift; sourceTree = "<group>"; };
+		C172ED071FDB12CC00180955 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C1795B611F9A46060036AD8D /* BaseRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRoundedButton.swift; sourceTree = "<group>"; };
+		C1795B631F9A46B40036AD8D /* BaseRoundedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRoundedLabel.swift; sourceTree = "<group>"; };
+		C17A13FF1FE31B4F0082810C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C17C4D481FD5D2A800361E12 /* CameraGalleyPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraGalleyPhotoVC.swift; sourceTree = "<group>"; };
+		C17C4D4A1FD5DEB000361E12 /* CameraPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewVC.swift; sourceTree = "<group>"; };
+		C17C4D4F1FD74A5200361E12 /* ProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1816D4320194446009389BD /* TextTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableCell.swift; sourceTree = "<group>"; };
+		C194345C1FB165BE0007E275 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		C19434611FB165DC0007E275 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		C19434691FB166340007E275 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		C19434711FB167640007E275 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		C19434751FB1678A0007E275 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		C19558331FB10F88007923DE /* PetName.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PetName.storyboard; sourceTree = "<group>"; };
+		C1AE757F1F993EE5000455BD /* PetBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetBreed.swift; sourceTree = "<group>"; };
+		C1AE75811F9949B8000455BD /* PetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetType.swift; sourceTree = "<group>"; };
+		C1C9212F1FCE3BA700997C20 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		C1C921311FCE41ED00997C20 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		C1D3F2A3200B243800B5CD3A /* UserDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetails.storyboard; sourceTree = "<group>"; };
+		C1D3F2A5200B247200B5CD3A /* UserDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVC.swift; sourceTree = "<group>"; };
+		C1E301751FE44DC10096131E /* Comment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comment.storyboard; sourceTree = "<group>"; };
+		C1E301771FE44DFF0096131E /* CommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
+		C1E3FBAD1FBF6CE50092BA23 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		C1E517151F93078F00CB7117 /* PetType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PetType.storyboard; sourceTree = "<group>"; };
+		C1E5171F1F930A6100CB7117 /* PetTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTypeVC.swift; sourceTree = "<group>"; };
+		C1E5172B1F931FF000CB7117 /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		C1EB36B21F3D4B1600E36AC4 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		C1EB36B61F3D4B3700E36AC4 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		C1EB36B81F3D4B5C00E36AC4 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		C1EB36BC1F3D4B7100E36AC4 /* Roboto-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Condensed.ttf"; sourceTree = "<group>"; };
+		C1F0B6D21FCF160100077F65 /* CameraPreviewVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewVideoVC.swift; sourceTree = "<group>"; };
+		C1F0B6D61FCF2B2500077F65 /* CustomImageViewII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageViewII.swift; sourceTree = "<group>"; };
+		C1F2DFE41F337CC2001CD765 /* Petbulb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petbulb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F2DFE71F337CC2001CD765 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1F2DFEF1F337CC3001CD765 /* Petbulb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Petbulb.xcdatamodel; sourceTree = "<group>"; };
+		C1F2DFF11F337CC3001CD765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1F2DFF41F337CC3001CD765 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1F2DFF61F337CC3001CD765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1F2DFFB1F337CC3001CD765 /* PetbulbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetbulbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F2DFFF1F337CC3001CD765 /* PetbulbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetbulbTests.swift; sourceTree = "<group>"; };
+		C1F2E0011F337CC3001CD765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1F2E0061F337CC3001CD765 /* PetbulbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetbulbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F2E00A1F337CC3001CD765 /* PetbulbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetbulbUITests.swift; sourceTree = "<group>"; };
+		C1F2E00C1F337CC3001CD765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1F5845C1FB8FB06008B30EE /* LoginWithEmail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginWithEmail.storyboard; sourceTree = "<group>"; };
+		C1F584601FB8FE84008B30EE /* LoginWIthEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWIthEmailVC.swift; sourceTree = "<group>"; };
+		C1F6C16B1FC8856D00E0C287 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		C1FA360C1FB49AE000D8D22F /* OnboardingPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageVC.swift; sourceTree = "<group>"; };
+		C1FA36101FB49B3200D8D22F /* OnboardingVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingVC.storyboard; sourceTree = "<group>"; };
+		C1FA36141FB4F8B800D8D22F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C1FB2E311FA0DC82000239B5 /* PetNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetNameVC.swift; sourceTree = "<group>"; };
+		C1FE4EF91FBE23FE00ACE1E2 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FE4EFB1FBE244600ACE1E2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FE4F001FBE246000ACE1E2 /* FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FE4F011FBE246000ACE1E2 /* FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FacebookLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FE4F021FBE246000ACE1E2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FE4F031FBE246000ACE1E2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FE4F041FBE2ED300ACE1E2 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		CA7061F7410B85CF006EA116 /* Pods-PetbulbTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetbulbTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetbulbTests/Pods-PetbulbTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF9ADC2F0B5B15ECB94974AE /* Pods-PetbulbUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetbulbUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetbulbUITests/Pods-PetbulbUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1B3A9B6DC8E8DA739D591BE /* Pods-PetbulbUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetbulbUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetbulbUITests/Pods-PetbulbUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA3D18CC71FEC3891D4C880E /* Pods-PetbulbTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetbulbTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetbulbTests/Pods-PetbulbTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1F2DFE11F337CC2001CD765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17C4D4E1FD74A5200361E12 /* ProgressHUD.framework in Frameworks */,
+				C11417621FC71A5800AEA4A6 /* nanopb.framework in Frameworks */,
+				C11417601FC71A5000AEA4A6 /* leveldb.framework in Frameworks */,
+				C114175E1FC71A3500AEA4A6 /* GoogleToolboxForMac.framework in Frameworks */,
+				C114175C1FC71A1900AEA4A6 /* GTMSessionFetcher.framework in Frameworks */,
+				C114175A1FC7144000AEA4A6 /* Kingfisher.framework in Frameworks */,
+				C130DB4E1FBE9DB8007DC362 /* Pods_PetbulbUITests.framework in Frameworks */,
+				C130DB4C1FBE9DAE007DC362 /* Pods_PetbulbTests.framework in Frameworks */,
+				C130DB4B1FBE9D9C007DC362 /* SafariServices.framework in Frameworks */,
+				C1FE4EFC1FBE246000ACE1E2 /* FacebookCore.framework in Frameworks */,
+				C1FE4EFD1FBE246000ACE1E2 /* FacebookLogin.framework in Frameworks */,
+				C1FE4EFE1FBE246000ACE1E2 /* FBSDKCoreKit.framework in Frameworks */,
+				C1FE4EFF1FBE246000ACE1E2 /* FBSDKLoginKit.framework in Frameworks */,
+				C1FE4EFA1FBE244600ACE1E2 /* SwiftyJSON.framework in Frameworks */,
+				C1FE4EF81FBE23FE00ACE1E2 /* Bolts.framework in Frameworks */,
+				07B8362F9AEB4B1C21E57A1E /* Pods_Petbulb.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1F2DFF81F337CC3001CD765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EDD9E1FC1A54D967BCE8C6F /* Pods_PetbulbTests.framework in Frameworks */,
+				35653E6B463C032654756CDE /* Pods_PetbulbTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1F2E0031F337CC3001CD765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38436B8AEA67C2280CF8AC0 /* Pods_PetbulbUITests.framework in Frameworks */,
+				A52099018866D8951E6F4996 /* Pods_PetbulbUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46B2A5D0AEBE8E341E219200 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3750A5D38FD1FAE780BD42E7 /* Pods-Petbulb.debug.xcconfig */,
+				21F4834C10E172A06CAE1EA4 /* Pods-Petbulb.release.xcconfig */,
+				CA7061F7410B85CF006EA116 /* Pods-PetbulbTests.debug.xcconfig */,
+				FA3D18CC71FEC3891D4C880E /* Pods-PetbulbTests.release.xcconfig */,
+				EF9ADC2F0B5B15ECB94974AE /* Pods-PetbulbUITests.debug.xcconfig */,
+				F1B3A9B6DC8E8DA739D591BE /* Pods-PetbulbUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1054DDC1F9A87050004AB02 /* GlobalProfileDataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				C1CA62561F4F0B6A00B7857A /* Extensions */,
+				C1054DDD1F9A87410004AB02 /* Gender.swift */,
+				C1054DE11F9A88360004AB02 /* PetPersonality.swift */,
+				C1054DEA1F9A8B9E0004AB02 /* Professions.swift */,
+			);
+			path = GlobalProfileDataTypes;
+			sourceTree = "<group>";
+		};
+		C168BB861FBA1816003DB0A7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C168BB891FBA184D003DB0A7 /* Model */,
+				C168BB881FBA183F003DB0A7 /* View */,
+				C168BB871FBA182F003DB0A7 /* Controller */,
+			);
+			name = Home;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C168BB871FBA182F003DB0A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C168BB8E1FBA1B33003DB0A7 /* HomeVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C168BB881FBA183F003DB0A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C168BB8A1FBA186C003DB0A7 /* Main.storyboard */,
+				C168BBAB1FBA25B9003DB0A7 /* Home.storyboard */,
+				C11803081FE2DBF900B5597F /* HomeTableViewCell.swift */,
+				C1816D4320194446009389BD /* TextTableCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C168BB891FBA184D003DB0A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C11803021FE18DDB00B5597F /* Post.swift */,
+				C17A13FF1FE31B4F0082810C /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C168BB9E1FBA2173003DB0A7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C168BBB11FBA25E8003DB0A7 /* Model */,
+				C168BBB01FBA25D5003DB0A7 /* View */,
+				C168BBAF1FBA25CB003DB0A7 /* Controller */,
+			);
+			name = Search;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C168BBAF1FBA25CB003DB0A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C168BB921FBA1B62003DB0A7 /* SearchVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C168BBB01FBA25D5003DB0A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C168BBB21FBA2607003DB0A7 /* Search.storyboard */,
+			);
+			name = View;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		C168BBB11FBA25E8003DB0A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C168BBBE1FBA269A003DB0A7 /* Deals */ = {
+			isa = PBXGroup;
+			children = (
+				C168BBC51FBA270F003DB0A7 /* Model */,
+				C168BBC41FBA26FD003DB0A7 /* View */,
+				C168BBC31FBA26F6003DB0A7 /* Controller */,
+			);
+			name = Deals;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C168BBC31FBA26F6003DB0A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C168BB961FBA1B8C003DB0A7 /* DealsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C168BBC41FBA26FD003DB0A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C168BBC61FBA272E003DB0A7 /* Deals.storyboard */,
+			);
+			name = View;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		C168BBC51FBA270F003DB0A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C16C440E1F45BDEA00C68558 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C1EB36B81F3D4B5C00E36AC4 /* Roboto-Thin.ttf */,
+				C1EB36BC1F3D4B7100E36AC4 /* Roboto-Condensed.ttf */,
+				C1EB36B61F3D4B3700E36AC4 /* Roboto-Light.ttf */,
+				C1EB36B21F3D4B1600E36AC4 /* Roboto-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		C19434581FB164F80007E275 /* SignIn-LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				C19434591FB165380007E275 /* Model */,
+				C194345A1FB165980007E275 /* View */,
+				C194345B1FB165A30007E275 /* Controller */,
+			);
+			path = "SignIn-LogIn";
+			sourceTree = "<group>";
+		};
+		C19434591FB165380007E275 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C194345A1FB165980007E275 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C194345C1FB165BE0007E275 /* SignIn.storyboard */,
+				C19434611FB165DC0007E275 /* SignUp.storyboard */,
+				C19434711FB167640007E275 /* ForgotPassword.storyboard */,
+				C1F5845C1FB8FB06008B30EE /* LoginWithEmail.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C194345B1FB165A30007E275 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1F6C16B1FC8856D00E0C287 /* SignInVC.swift */,
+				C19434691FB166340007E275 /* SignUpVC.swift */,
+				C19434751FB1678A0007E275 /* ForgotPasswordVC.swift */,
+				C1F584601FB8FE84008B30EE /* LoginWIthEmailVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C194346D1FB166BA0007E275 /* PetOwners */ = {
+			isa = PBXGroup;
+			children = (
+				C194346E1FB166C80007E275 /* Model */,
+				C194346F1FB166D00007E275 /* View */,
+				C19434701FB166DB0007E275 /* Controller */,
+			);
+			path = PetOwners;
+			sourceTree = "<group>";
+		};
+		C194346E1FB166C80007E275 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1054DE61F9A89BE0004AB02 /* PetOwners.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C194346F1FB166D00007E275 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C168BBBA1FBA2679003DB0A7 /* Profile.storyboard */,
+				C1D3F2A3200B243800B5CD3A /* UserDetails.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C19434701FB166DB0007E275 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C168BB9A1FBA1BAD003DB0A7 /* ProfileVC.swift */,
+				C1D3F2A5200B247200B5CD3A /* UserDetailsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C196EDF21F3A5A94001174BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C196EDF31F3A5AA4001174BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C16DC0711FCC8BFD00DFBCAD /* CameraText.storyboard */,
+				C16DC0791FCC8C2E00DFBCAD /* CameraAdvice.storyboard */,
+				C136289620211C5C0085FAB1 /* AdviceTableCell.swift */,
+				C16DC0691FCC82BB00DFBCAD /* CameraPhoto.storyboard */,
+				C12E8E4B1FDF2F570001D14D /* CameraGallery.storyboard */,
+				C16DC0751FCC8C1700DFBCAD /* CameraVideo.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C196EDF41F3A5AAA001174BE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C16DC07D1FCC8C5B00DFBCAD /* CameraTextVC.swift */,
+				C16DC0851FCC8C9200DFBCAD /* CameraAdviceVC.swift */,
+				C17C4D4A1FD5DEB000361E12 /* CameraPreviewVC.swift */,
+				C16DC06D1FCC86DA00DFBCAD /* CameraPhotoVC.swift */,
+				C1F0B6D21FCF160100077F65 /* CameraPreviewVideoVC.swift */,
+				C16DC0811FCC8C7A00DFBCAD /* CameraVideoVC.swift */,
+				C17C4D481FD5D2A800361E12 /* CameraGalleyPhotoVC.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		C1CA62561F4F0B6A00B7857A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C1E301711FE44D2A0096131E /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				C1E301741FE44D750096131E /* Model */,
+				C1E301731FE44D670096131E /* View */,
+				C1E301721FE44D580096131E /* ViewController */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		C1E301721FE44D580096131E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1E301771FE44DFF0096131E /* CommentVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C1E301731FE44D670096131E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1E301751FE44DC10096131E /* Comment.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1E301741FE44D750096131E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1E517071F92E18100CB7117 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C1E517111F93061200CB7117 /* ViewController */,
+				C1E517101F93060100CB7117 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C1E517101F93060100CB7117 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1FA36101FB49B3200D8D22F /* OnboardingVC.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1E517111F93061200CB7117 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1FA360C1FB49AE000D8D22F /* OnboardingPageVC.swift */,
+				C1FE4F041FBE2ED300ACE1E2 /* OnboardingVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C1E517141F93074B00CB7117 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1E517151F93078F00CB7117 /* PetType.storyboard */,
+				C1795B631F9A46B40036AD8D /* BaseRoundedLabel.swift */,
+				C19558331FB10F88007923DE /* PetName.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1E5171D1F930A1800CB7117 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1E5171F1F930A6100CB7117 /* PetTypeVC.swift */,
+				C1FB2E311FA0DC82000239B5 /* PetNameVC.swift */,
+			);
+			name = ViewController;
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1E5171E1F930A2700CB7117 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1AE757F1F993EE5000455BD /* PetBreed.swift */,
+				C1AE75811F9949B8000455BD /* PetType.swift */,
+				C1054DD81F9A85510004AB02 /* Pet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1E517231F930E1100CB7117 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				C1E5172B1F931FF000CB7117 /* CircularTransition.swift */,
+				C1E3FBAD1FBF6CE50092BA23 /* CustomTextField.swift */,
+				C1C9212F1FCE3BA700997C20 /* DataServices.swift */,
+				C1C921311FCE41ED00997C20 /* CustomImageView.swift */,
+				C1F0B6D61FCF2B2500077F65 /* CustomImageViewII.swift */,
+				C1795B611F9A46060036AD8D /* BaseRoundedButton.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		C1EB36B11F3D4A8900E36AC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1F2DFE71F337CC2001CD765 /* AppDelegate.swift */,
+				C172ED071FDB12CC00180955 /* AuthService.swift */,
+				C12E8E491FDF2AA30001D14D /* Config.swift */,
+				C1F2DFF31F337CC3001CD765 /* LaunchScreen.storyboard */,
+				C1F2DFF11F337CC3001CD765 /* Assets.xcassets */,
+				C1F2DFF61F337CC3001CD765 /* Info.plist */,
+				C1FA36141FB4F8B800D8D22F /* GoogleService-Info.plist */,
+				C16C440E1F45BDEA00C68558 /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C1F2DFDB1F337CC2001CD765 = {
+			isa = PBXGroup;
+			children = (
+				C1F2DFE61F337CC2001CD765 /* Petbulb */,
+				C1F2DFFE1F337CC3001CD765 /* PetbulbTests */,
+				C1F2E0091F337CC3001CD765 /* PetbulbUITests */,
+				C1F2DFE51F337CC2001CD765 /* Products */,
+				46B2A5D0AEBE8E341E219200 /* Pods */,
+				F863A80CF9CB524EAA75CC79 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1F2DFE51F337CC2001CD765 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1F2DFE41F337CC2001CD765 /* Petbulb.app */,
+				C1F2DFFB1F337CC3001CD765 /* PetbulbTests.xctest */,
+				C1F2E0061F337CC3001CD765 /* PetbulbUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1F2DFE61F337CC2001CD765 /* Petbulb */ = {
+			isa = PBXGroup;
+			children = (
+				C1E517231F930E1100CB7117 /* Customs */,
+				C1E517071F92E18100CB7117 /* Onboarding */,
+				C19434581FB164F80007E275 /* SignIn-LogIn */,
+				C168BB861FBA1816003DB0A7 /* Home */,
+				C1E301711FE44D2A0096131E /* Comment */,
+				C168BB9E1FBA2173003DB0A7 /* Search */,
+				C1F2E0251F337E3D001CD765 /* Camera */,
+				C168BBBE1FBA269A003DB0A7 /* Deals */,
+				C1F2E0211F337E0A001CD765 /* Profile */,
+				C1F2E01F1F337DF4001CD765 /* Menu */,
+				C1F2E01E1F337DE8001CD765 /* Notification */,
+				C1F2E01D1F337DDF001CD765 /* Chat */,
+				C1F2E0241F337E1F001CD765 /* Discover */,
+				C1F2E0231F337E18001CD765 /* Events */,
+				C1F2E0221F337E10001CD765 /* Groups */,
+				C1F2E0201F337DFC001CD765 /* UserSettings */,
+				C1F2E0261F337EBD001CD765 /* UserSupport */,
+				C1EB36B11F3D4A8900E36AC4 /* Resources */,
+				C1F2DFEE1F337CC3001CD765 /* Petbulb.xcdatamodeld */,
+			);
+			path = Petbulb;
+			sourceTree = "<group>";
+		};
+		C1F2DFFE1F337CC3001CD765 /* PetbulbTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1F2DFFF1F337CC3001CD765 /* PetbulbTests.swift */,
+				C1F2E0011F337CC3001CD765 /* Info.plist */,
+			);
+			path = PetbulbTests;
+			sourceTree = "<group>";
+		};
+		C1F2E0091F337CC3001CD765 /* PetbulbUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1F2E00A1F337CC3001CD765 /* PetbulbUITests.swift */,
+				C1F2E00C1F337CC3001CD765 /* Info.plist */,
+			);
+			path = PetbulbUITests;
+			sourceTree = "<group>";
+		};
+		C1F2E01D1F337DDF001CD765 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		C1F2E01E1F337DE8001CD765 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		C1F2E01F1F337DF4001CD765 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		C1F2E0201F337DFC001CD765 /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UserSettings;
+			sourceTree = "<group>";
+		};
+		C1F2E0211F337E0A001CD765 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C1054DDC1F9A87050004AB02 /* GlobalProfileDataTypes */,
+				C194346D1FB166BA0007E275 /* PetOwners */,
+				C1F997D51F3646970099E27F /* Brands */,
+				C1F997D41F36468C0099E27F /* Pets */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		C1F2E0221F337E10001CD765 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Groups;
+			sourceTree = "<group>";
+		};
+		C1F2E0231F337E18001CD765 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		C1F2E0241F337E1F001CD765 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		C1F2E0251F337E3D001CD765 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				C196EDF21F3A5A94001174BE /* Model */,
+				C196EDF31F3A5AA4001174BE /* View */,
+				C196EDF41F3A5AAA001174BE /* ViewController */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		C1F2E0261F337EBD001CD765 /* UserSupport */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UserSupport;
+			sourceTree = "<group>";
+		};
+		C1F997D41F36468C0099E27F /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				C1E5171E1F930A2700CB7117 /* Model */,
+				C1E5171D1F930A1800CB7117 /* ViewController */,
+				C1E517141F93074B00CB7117 /* View */,
+			);
+			name = Pets;
+			sourceTree = "<group>";
+		};
+		C1F997D51F3646970099E27F /* Brands */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Brands;
+			sourceTree = "<group>";
+		};
+		F863A80CF9CB524EAA75CC79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C17C4D4F1FD74A5200361E12 /* ProgressHUD.framework */,
+				C11417641FC71C9B00AEA4A6 /* XCTest.framework */,
+				C11417631FC71A5800AEA4A6 /* nanopb.framework */,
+				C11417611FC71A5000AEA4A6 /* leveldb.framework */,
+				C114175F1FC71A3500AEA4A6 /* GoogleToolboxForMac.framework */,
+				C114175D1FC71A1900AEA4A6 /* GTMSessionFetcher.framework */,
+				C114175B1FC7144000AEA4A6 /* Kingfisher.framework */,
+				C130DB4F1FBE9DB8007DC362 /* Pods_PetbulbUITests.framework */,
+				C130DB4D1FBE9DAE007DC362 /* Pods_PetbulbTests.framework */,
+				C130DB4A1FBE9D9B007DC362 /* SafariServices.framework */,
+				C1FE4F001FBE246000ACE1E2 /* FacebookCore.framework */,
+				C1FE4F011FBE246000ACE1E2 /* FacebookLogin.framework */,
+				C1FE4F021FBE246000ACE1E2 /* FBSDKCoreKit.framework */,
+				C1FE4F031FBE246000ACE1E2 /* FBSDKLoginKit.framework */,
+				C1FE4EFB1FBE244600ACE1E2 /* SwiftyJSON.framework */,
+				C1FE4EF91FBE23FE00ACE1E2 /* Bolts.framework */,
+				60C2111BA96CF749007F1040 /* Pods_Petbulb.framework */,
+				8B8BC66BACA267C72EDB4F0E /* Pods_PetbulbTests.framework */,
+				802B483B6035FF82BFDA94F0 /* Pods_PetbulbUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1F2DFE31F337CC2001CD765 /* Petbulb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1F2E00F1F337CC3001CD765 /* Build configuration list for PBXNativeTarget "Petbulb" */;
+			buildPhases = (
+				A104C55CDFD228A0B22064D4 /* [CP] Check Pods Manifest.lock */,
+				C1F2DFE01F337CC2001CD765 /* Sources */,
+				C1F2DFE11F337CC2001CD765 /* Frameworks */,
+				C1F2DFE21F337CC2001CD765 /* Resources */,
+				0D4490E80AE6D41645FD23C4 /* [CP] Embed Pods Frameworks */,
+				32B68AA7E12B148EF792B63D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Petbulb;
+			productName = Petbulb;
+			productReference = C1F2DFE41F337CC2001CD765 /* Petbulb.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1F2DFFA1F337CC3001CD765 /* PetbulbTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1F2E0121F337CC3001CD765 /* Build configuration list for PBXNativeTarget "PetbulbTests" */;
+			buildPhases = (
+				B8DE0C86048A9D5C9F3CD6BA /* [CP] Check Pods Manifest.lock */,
+				C1F2DFF71F337CC3001CD765 /* Sources */,
+				C1F2DFF81F337CC3001CD765 /* Frameworks */,
+				C1F2DFF91F337CC3001CD765 /* Resources */,
+				054C3BAEB5FA586B59CB44AE /* [CP] Embed Pods Frameworks */,
+				9859A26A9F856BAFBE67A79D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1F2DFFD1F337CC3001CD765 /* PBXTargetDependency */,
+			);
+			name = PetbulbTests;
+			productName = PetbulbTests;
+			productReference = C1F2DFFB1F337CC3001CD765 /* PetbulbTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1F2E0051F337CC3001CD765 /* PetbulbUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1F2E0151F337CC3001CD765 /* Build configuration list for PBXNativeTarget "PetbulbUITests" */;
+			buildPhases = (
+				2AE2219488F50EF4582688B6 /* [CP] Check Pods Manifest.lock */,
+				C1F2E0021F337CC3001CD765 /* Sources */,
+				C1F2E0031F337CC3001CD765 /* Frameworks */,
+				C1F2E0041F337CC3001CD765 /* Resources */,
+				E82C268718927AF85E6F7FAE /* [CP] Embed Pods Frameworks */,
+				15603DEDCA091DBDA722A2B8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1F2E0081F337CC3001CD765 /* PBXTargetDependency */,
+			);
+			name = PetbulbUITests;
+			productName = PetbulbUITests;
+			productReference = C1F2E0061F337CC3001CD765 /* PetbulbUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1F2DFDC1F337CC2001CD765 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Petbulb Corp.";
+				TargetAttributes = {
+					C1F2DFE31F337CC2001CD765 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2UELNN9BXQ;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					C1F2DFFA1F337CC3001CD765 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1F2DFE31F337CC2001CD765;
+					};
+					C1F2E0051F337CC3001CD765 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1F2DFE31F337CC2001CD765;
+					};
+				};
+			};
+			buildConfigurationList = C1F2DFDF1F337CC2001CD765 /* Build configuration list for PBXProject "Petbulb" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1F2DFDB1F337CC2001CD765;
+			productRefGroup = C1F2DFE51F337CC2001CD765 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1F2DFE31F337CC2001CD765 /* Petbulb */,
+				C1F2DFFA1F337CC3001CD765 /* PetbulbTests */,
+				C1F2E0051F337CC3001CD765 /* PetbulbUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1F2DFE21F337CC2001CD765 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12E8E4C1FDF2F570001D14D /* CameraGallery.storyboard in Resources */,
+				C16DC0721FCC8BFD00DFBCAD /* CameraText.storyboard in Resources */,
+				C168BBC71FBA272E003DB0A7 /* Deals.storyboard in Resources */,
+				C1EB36B31F3D4B1600E36AC4 /* Roboto-Regular.ttf in Resources */,
+				C1D3F2A4200B243800B5CD3A /* UserDetails.storyboard in Resources */,
+				C168BBBB1FBA2679003DB0A7 /* Profile.storyboard in Resources */,
+				C1E517161F93078F00CB7117 /* PetType.storyboard in Resources */,
+				C1F2DFF51F337CC3001CD765 /* LaunchScreen.storyboard in Resources */,
+				C1EB36B71F3D4B3700E36AC4 /* Roboto-Light.ttf in Resources */,
+				C168BBB31FBA2607003DB0A7 /* Search.storyboard in Resources */,
+				C1E301761FE44DC10096131E /* Comment.storyboard in Resources */,
+				C168BBAC1FBA25B9003DB0A7 /* Home.storyboard in Resources */,
+				C168BB8B1FBA186C003DB0A7 /* Main.storyboard in Resources */,
+				C16DC06A1FCC82BB00DFBCAD /* CameraPhoto.storyboard in Resources */,
+				C16DC07A1FCC8C2E00DFBCAD /* CameraAdvice.storyboard in Resources */,
+				C1F2DFF21F337CC3001CD765 /* Assets.xcassets in Resources */,
+				C19434721FB167640007E275 /* ForgotPassword.storyboard in Resources */,
+				C16DC0761FCC8C1700DFBCAD /* CameraVideo.storyboard in Resources */,
+				C1FA36111FB49B3200D8D22F /* OnboardingVC.storyboard in Resources */,
+				C194345D1FB165BE0007E275 /* SignIn.storyboard in Resources */,
+				C1FA36151FB4F8B900D8D22F /* GoogleService-Info.plist in Resources */,
+				C19434621FB165DC0007E275 /* SignUp.storyboard in Resources */,
+				C1EB36B91F3D4B5C00E36AC4 /* Roboto-Thin.ttf in Resources */,
+				C1F5845D1FB8FB06008B30EE /* LoginWithEmail.storyboard in Resources */,
+				C1EB36BD1F3D4B7100E36AC4 /* Roboto-Condensed.ttf in Resources */,
+				C19558341FB10F88007923DE /* PetName.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1F2DFF91F337CC3001CD765 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A1A11E1FBCC697004F97B6 /* Info.plist in Resources */,
+				C194345E1FB165BE0007E275 /* SignIn.storyboard in Resources */,
+				C1E517171F93078F00CB7117 /* PetType.storyboard in Resources */,
+				C19434731FB167640007E275 /* ForgotPassword.storyboard in Resources */,
+				C168BBAD1FBA25B9003DB0A7 /* Home.storyboard in Resources */,
+				C168BB8C1FBA186C003DB0A7 /* Main.storyboard in Resources */,
+				C16DC0731FCC8BFD00DFBCAD /* CameraText.storyboard in Resources */,
+				C19434631FB165DC0007E275 /* SignUp.storyboard in Resources */,
+				C1F5845E1FB8FB06008B30EE /* LoginWithEmail.storyboard in Resources */,
+				C16DC06B1FCC82BB00DFBCAD /* CameraPhoto.storyboard in Resources */,
+				C1FA36121FB49B3200D8D22F /* OnboardingVC.storyboard in Resources */,
+				C16DC07B1FCC8C2E00DFBCAD /* CameraAdvice.storyboard in Resources */,
+				C1FA36161FB4F8B900D8D22F /* GoogleService-Info.plist in Resources */,
+				C1EB36BE1F3D4B7100E36AC4 /* Roboto-Condensed.ttf in Resources */,
+				C168BBC81FBA272E003DB0A7 /* Deals.storyboard in Resources */,
+				C1EB36BA1F3D4B5C00E36AC4 /* Roboto-Thin.ttf in Resources */,
+				C1EB36B41F3D4B1600E36AC4 /* Roboto-Regular.ttf in Resources */,
+				C168BBBC1FBA2679003DB0A7 /* Profile.storyboard in Resources */,
+				C168BBB41FBA2607003DB0A7 /* Search.storyboard in Resources */,
+				C16DC0771FCC8C1700DFBCAD /* CameraVideo.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1F2E0041F337CC3001CD765 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A1A11F1FBCC697004F97B6 /* Info.plist in Resources */,
+				C194345F1FB165BE0007E275 /* SignIn.storyboard in Resources */,
+				C1E517181F93078F00CB7117 /* PetType.storyboard in Resources */,
+				C19434741FB167640007E275 /* ForgotPassword.storyboard in Resources */,
+				C168BBAE1FBA25B9003DB0A7 /* Home.storyboard in Resources */,
+				C168BB8D1FBA186C003DB0A7 /* Main.storyboard in Resources */,
+				C16DC0741FCC8BFD00DFBCAD /* CameraText.storyboard in Resources */,
+				C19434641FB165DC0007E275 /* SignUp.storyboard in Resources */,
+				C1F5845F1FB8FB06008B30EE /* LoginWithEmail.storyboard in Resources */,
+				C16DC06C1FCC82BB00DFBCAD /* CameraPhoto.storyboard in Resources */,
+				C1FA36131FB49B3200D8D22F /* OnboardingVC.storyboard in Resources */,
+				C16DC07C1FCC8C2E00DFBCAD /* CameraAdvice.storyboard in Resources */,
+				C1FA36171FB4F8B900D8D22F /* GoogleService-Info.plist in Resources */,
+				C1EB36BF1F3D4B7100E36AC4 /* Roboto-Condensed.ttf in Resources */,
+				C168BBC91FBA272E003DB0A7 /* Deals.storyboard in Resources */,
+				C1EB36BB1F3D4B5C00E36AC4 /* Roboto-Thin.ttf in Resources */,
+				C1EB36B51F3D4B1600E36AC4 /* Roboto-Regular.ttf in Resources */,
+				C168BBBD1FBA2679003DB0A7 /* Profile.storyboard in Resources */,
+				C168BBB51FBA2607003DB0A7 /* Search.storyboard in Resources */,
+				C16DC0781FCC8C1700DFBCAD /* CameraVideo.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		054C3BAEB5FA586B59CB44AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetbulbTests/Pods-PetbulbTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D4490E80AE6D41645FD23C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Petbulb/Pods-Petbulb-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Petbulb/Pods-Petbulb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15603DEDCA091DBDA722A2B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetbulbUITests/Pods-PetbulbUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AE2219488F50EF4582688B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetbulbUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		32B68AA7E12B148EF792B63D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Petbulb/Pods-Petbulb-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Petbulb/Pods-Petbulb-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9859A26A9F856BAFBE67A79D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetbulbTests/Pods-PetbulbTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A104C55CDFD228A0B22064D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Petbulb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8DE0C86048A9D5C9F3CD6BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetbulbTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E82C268718927AF85E6F7FAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetbulbUITests/Pods-PetbulbUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1F2DFE01F337CC2001CD765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E3FBAE1FBF6CE50092BA23 /* CustomTextField.swift in Sources */,
+				C168BB9B1FBA1BAD003DB0A7 /* ProfileVC.swift in Sources */,
+				C1F584611FB8FE84008B30EE /* LoginWIthEmailVC.swift in Sources */,
+				C172ED081FDB12CC00180955 /* AuthService.swift in Sources */,
+				C1F2DFF01F337CC3001CD765 /* Petbulb.xcdatamodeld in Sources */,
+				C16DC07E1FCC8C5B00DFBCAD /* CameraTextVC.swift in Sources */,
+				C1E301781FE44DFF0096131E /* CommentVC.swift in Sources */,
+				C16DC0861FCC8C9200DFBCAD /* CameraAdviceVC.swift in Sources */,
+				C1F0B6D31FCF160200077F65 /* CameraPreviewVideoVC.swift in Sources */,
+				C1AE75821F9949B8000455BD /* PetType.swift in Sources */,
+				C168BB8F1FBA1B33003DB0A7 /* HomeVC.swift in Sources */,
+				C1C921321FCE41ED00997C20 /* CustomImageView.swift in Sources */,
+				C136289720211C5C0085FAB1 /* AdviceTableCell.swift in Sources */,
+				C1D3F2A6200B247200B5CD3A /* UserDetailsVC.swift in Sources */,
+				C1FE4F051FBE2ED300ACE1E2 /* OnboardingVC.swift in Sources */,
+				C1054DE71F9A89BE0004AB02 /* PetOwners.swift in Sources */,
+				C194346A1FB166340007E275 /* SignUpVC.swift in Sources */,
+				C1054DDE1F9A87410004AB02 /* Gender.swift in Sources */,
+				C11803091FE2DBFA00B5597F /* HomeTableViewCell.swift in Sources */,
+				C1FB2E321FA0DC82000239B5 /* PetNameVC.swift in Sources */,
+				C1E5172C1F931FF000CB7117 /* CircularTransition.swift in Sources */,
+				C1054DEB1F9A8B9E0004AB02 /* Professions.swift in Sources */,
+				C19434761FB1678A0007E275 /* ForgotPasswordVC.swift in Sources */,
+				C1795B621F9A46060036AD8D /* BaseRoundedButton.swift in Sources */,
+				C1F6C16C1FC8856D00E0C287 /* SignInVC.swift in Sources */,
+				C1054DE21F9A88360004AB02 /* PetPersonality.swift in Sources */,
+				C1C921301FCE3BA700997C20 /* DataServices.swift in Sources */,
+				C168BB971FBA1B8C003DB0A7 /* DealsVC.swift in Sources */,
+				C16DC0821FCC8C7A00DFBCAD /* CameraVideoVC.swift in Sources */,
+				C16DC06E1FCC86DA00DFBCAD /* CameraPhotoVC.swift in Sources */,
+				C168BB931FBA1B62003DB0A7 /* SearchVC.swift in Sources */,
+				C17A14001FE31B4F0082810C /* User.swift in Sources */,
+				C1816D4420194446009389BD /* TextTableCell.swift in Sources */,
+				C1E517201F930A6100CB7117 /* PetTypeVC.swift in Sources */,
+				C1F0B6D71FCF2B2500077F65 /* CustomImageViewII.swift in Sources */,
+				C17C4D491FD5D2A800361E12 /* CameraGalleyPhotoVC.swift in Sources */,
+				C1FA360D1FB49AE000D8D22F /* OnboardingPageVC.swift in Sources */,
+				C1795B641F9A46B40036AD8D /* BaseRoundedLabel.swift in Sources */,
+				C12E8E4A1FDF2AA30001D14D /* Config.swift in Sources */,
+				C17C4D4B1FD5DEB000361E12 /* CameraPreviewVC.swift in Sources */,
+				C1F2DFE81F337CC2001CD765 /* AppDelegate.swift in Sources */,
+				C11803031FE18DDB00B5597F /* Post.swift in Sources */,
+				C1054DD91F9A85510004AB02 /* Pet.swift in Sources */,
+				C1AE75801F993EE5000455BD /* PetBreed.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1F2DFF71F337CC3001CD765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1F0B6D41FCF160200077F65 /* CameraPreviewVideoVC.swift in Sources */,
+				C1054DDA1F9A85510004AB02 /* Pet.swift in Sources */,
+				C118030B1FE2DC0C00B5597F /* HomeTableViewCell.swift in Sources */,
+				C1FA360E1FB49AE000D8D22F /* OnboardingPageVC.swift in Sources */,
+				C19434771FB1678A0007E275 /* ForgotPasswordVC.swift in Sources */,
+				C168BB901FBA1B33003DB0A7 /* HomeVC.swift in Sources */,
+				C1E5172D1F931FF000CB7117 /* CircularTransition.swift in Sources */,
+				C11417671FC7208400AEA4A6 /* CustomTextField.swift in Sources */,
+				C1E517211F930A6100CB7117 /* PetTypeVC.swift in Sources */,
+				C16DC06F1FCC86DA00DFBCAD /* CameraPhotoVC.swift in Sources */,
+				C168BB981FBA1B8C003DB0A7 /* DealsVC.swift in Sources */,
+				C1FB2E331FA0DC82000239B5 /* PetNameVC.swift in Sources */,
+				C1F584621FB8FE84008B30EE /* LoginWIthEmailVC.swift in Sources */,
+				C168BB9C1FBA1BAD003DB0A7 /* ProfileVC.swift in Sources */,
+				C168BB941FBA1B62003DB0A7 /* SearchVC.swift in Sources */,
+				C1054DEC1F9A8B9E0004AB02 /* Professions.swift in Sources */,
+				C1F6C16D1FC8856D00E0C287 /* SignInVC.swift in Sources */,
+				C1054DE31F9A88360004AB02 /* PetPersonality.swift in Sources */,
+				C17C4D4D1FD5FD5B00361E12 /* BaseRoundedButton.swift in Sources */,
+				C16DC0871FCC8C9200DFBCAD /* CameraAdviceVC.swift in Sources */,
+				C1054DE81F9A89BE0004AB02 /* PetOwners.swift in Sources */,
+				C1054DDF1F9A87410004AB02 /* Gender.swift in Sources */,
+				C16DC07F1FCC8C5B00DFBCAD /* CameraTextVC.swift in Sources */,
+				C16DC0831FCC8C7A00DFBCAD /* CameraVideoVC.swift in Sources */,
+				C1F2E0001F337CC3001CD765 /* PetbulbTests.swift in Sources */,
+				C194346B1FB166340007E275 /* SignUpVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1F2E0021F337CC3001CD765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1F0B6D51FCF160200077F65 /* CameraPreviewVideoVC.swift in Sources */,
+				C1054DDB1F9A85510004AB02 /* Pet.swift in Sources */,
+				C118030A1FE2DC0C00B5597F /* HomeTableViewCell.swift in Sources */,
+				C1FA360F1FB49AE000D8D22F /* OnboardingPageVC.swift in Sources */,
+				C19434781FB1678A0007E275 /* ForgotPasswordVC.swift in Sources */,
+				C168BB911FBA1B33003DB0A7 /* HomeVC.swift in Sources */,
+				C1E5172E1F931FF000CB7117 /* CircularTransition.swift in Sources */,
+				C11417681FC7208500AEA4A6 /* CustomTextField.swift in Sources */,
+				C1E517221F930A6100CB7117 /* PetTypeVC.swift in Sources */,
+				C16DC0701FCC86DA00DFBCAD /* CameraPhotoVC.swift in Sources */,
+				C168BB991FBA1B8C003DB0A7 /* DealsVC.swift in Sources */,
+				C1FB2E341FA0DC82000239B5 /* PetNameVC.swift in Sources */,
+				C1F584631FB8FE84008B30EE /* LoginWIthEmailVC.swift in Sources */,
+				C168BB9D1FBA1BAD003DB0A7 /* ProfileVC.swift in Sources */,
+				C168BB951FBA1B62003DB0A7 /* SearchVC.swift in Sources */,
+				C1054DED1F9A8B9E0004AB02 /* Professions.swift in Sources */,
+				C1F6C16E1FC8856D00E0C287 /* SignInVC.swift in Sources */,
+				C1054DE41F9A88360004AB02 /* PetPersonality.swift in Sources */,
+				C17C4D4C1FD5FD5B00361E12 /* BaseRoundedButton.swift in Sources */,
+				C16DC0881FCC8C9200DFBCAD /* CameraAdviceVC.swift in Sources */,
+				C1054DE91F9A89BE0004AB02 /* PetOwners.swift in Sources */,
+				C1054DE01F9A87410004AB02 /* Gender.swift in Sources */,
+				C16DC0801FCC8C5B00DFBCAD /* CameraTextVC.swift in Sources */,
+				C16DC0841FCC8C7A00DFBCAD /* CameraVideoVC.swift in Sources */,
+				C1F2E00B1F337CC3001CD765 /* PetbulbUITests.swift in Sources */,
+				C194346C1FB166340007E275 /* SignUpVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1F2DFFD1F337CC3001CD765 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1F2DFE31F337CC2001CD765 /* Petbulb */;
+			targetProxy = C1F2DFFC1F337CC3001CD765 /* PBXContainerItemProxy */;
+		};
+		C1F2E0081F337CC3001CD765 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1F2DFE31F337CC2001CD765 /* Petbulb */;
+			targetProxy = C1F2E0071F337CC3001CD765 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1F2DFF31F337CC3001CD765 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1F2DFF41F337CC3001CD765 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1F2E00D1F337CC3001CD765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1F2E00E1F337CC3001CD765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1F2E0101F337CC3001CD765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3750A5D38FD1FAE780BD42E7 /* Pods-Petbulb.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UELNN9BXQ;
+				INFOPLIST_FILE = Petbulb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = petbulb.com.Petbulb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C1F2E0111F337CC3001CD765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21F4834C10E172A06CAE1EA4 /* Pods-Petbulb.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UELNN9BXQ;
+				INFOPLIST_FILE = Petbulb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = petbulb.com.Petbulb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		C1F2E0131F337CC3001CD765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA7061F7410B85CF006EA116 /* Pods-PetbulbTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PetbulbTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = petbulb.com.PetbulbTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Petbulb.app/Petbulb";
+			};
+			name = Debug;
+		};
+		C1F2E0141F337CC3001CD765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3D18CC71FEC3891D4C880E /* Pods-PetbulbTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PetbulbTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = petbulb.com.PetbulbTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Petbulb.app/Petbulb";
+			};
+			name = Release;
+		};
+		C1F2E0161F337CC3001CD765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9ADC2F0B5B15ECB94974AE /* Pods-PetbulbUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PetbulbUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = petbulb.com.PetbulbUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Petbulb;
+			};
+			name = Debug;
+		};
+		C1F2E0171F337CC3001CD765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1B3A9B6DC8E8DA739D591BE /* Pods-PetbulbUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PetbulbUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = petbulb.com.PetbulbUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Petbulb;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1F2DFDF1F337CC2001CD765 /* Build configuration list for PBXProject "Petbulb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1F2E00D1F337CC3001CD765 /* Debug */,
+				C1F2E00E1F337CC3001CD765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1F2E00F1F337CC3001CD765 /* Build configuration list for PBXNativeTarget "Petbulb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1F2E0101F337CC3001CD765 /* Debug */,
+				C1F2E0111F337CC3001CD765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1F2E0121F337CC3001CD765 /* Build configuration list for PBXNativeTarget "PetbulbTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1F2E0131F337CC3001CD765 /* Debug */,
+				C1F2E0141F337CC3001CD765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1F2E0151F337CC3001CD765 /* Build configuration list for PBXNativeTarget "PetbulbUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1F2E0161F337CC3001CD765 /* Debug */,
+				C1F2E0171F337CC3001CD765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C1F2DFEE1F337CC3001CD765 /* Petbulb.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C1F2DFEF1F337CC3001CD765 /* Petbulb.xcdatamodel */,
+			);
+			currentVersion = C1F2DFEF1F337CC3001CD765 /* Petbulb.xcdatamodel */;
+			path = Petbulb.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C1F2DFDC1F337CC2001CD765 /* Project object */;
+}

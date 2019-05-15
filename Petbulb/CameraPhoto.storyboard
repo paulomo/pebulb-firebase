@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g6j-Os-XZF">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--PHOTO-->
+        <scene sceneID="6PU-m0-J5B">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="AIO-NG-1d6" customClass="CameraPhotoVC" customModule="Petbulb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vuG-sd-hjz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5JM-Co-nmy">
+                                <rect key="frame" x="10" y="86" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="g0t-3S-Vu0"/>
+                                    <constraint firstAttribute="width" constant="110" id="p9r-8c-CYi"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Rk-td-ZXe">
+                                <rect key="frame" x="124" y="86" width="186" height="111"/>
+                                <color key="backgroundColor" white="0.88380537429999995" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="aTJ-Xv-ga0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.79797196061643838" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Rk-td-ZXe" firstAttribute="leading" secondItem="5JM-Co-nmy" secondAttribute="trailing" constant="4" id="5KW-kv-O8R"/>
+                            <constraint firstItem="5JM-Co-nmy" firstAttribute="leading" secondItem="hH9-nU-fca" secondAttribute="leading" constant="10" id="Iid-He-Zdz"/>
+                            <constraint firstItem="hH9-nU-fca" firstAttribute="trailing" secondItem="1Rk-td-ZXe" secondAttribute="trailing" constant="10" id="bt7-Ta-Ag1"/>
+                            <constraint firstItem="5JM-Co-nmy" firstAttribute="top" secondItem="hH9-nU-fca" secondAttribute="top" constant="22" id="fDQ-gp-VgW"/>
+                            <constraint firstItem="1Rk-td-ZXe" firstAttribute="top" secondItem="hH9-nU-fca" secondAttribute="top" constant="22" id="ngB-p1-BeC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hH9-nU-fca"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="PHOTO" id="05z-Tb-p6i">
+                        <barButtonItem key="rightBarButtonItem" id="gUN-PN-Yae">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NTT-IU-H1t">
+                                <rect key="frame" x="233" y="4" width="71" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postButton_Pressed:" destination="AIO-NG-1d6" eventType="touchUpInside" id="Rz7-Va-l6j"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="captionText" destination="1Rk-td-ZXe" id="D5L-xE-6dh"/>
+                        <outlet property="imageToPost" destination="5JM-Co-nmy" id="9cQ-sN-Joj"/>
+                        <outlet property="postButton" destination="NTT-IU-H1t" id="qVp-LU-bpq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2M-SB-BxZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="166"/>
+        </scene>
+        <!--Camera PreviewVC-->
+        <scene sceneID="3S3-gm-fmt">
+            <objects>
+                <viewController id="cbM-T3-e4L" userLabel="Camera PreviewVC" customClass="CameraPreviewVC" customModule="Petbulb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EmW-SL-YIg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZn-i1-LAB">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gql-DF-5r5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="IMAGE GALLERY">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aPo-ue-yAW" kind="show" id="zEb-fm-miA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fW-Io-uqm" customClass="BaseRoundedButton" customModule="Petbulb" customModuleProvider="target">
+                                <rect key="frame" x="130" y="373" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.23921568630000001" green="0.76078431369999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7En-Ul-phl"/>
+                                    <constraint firstAttribute="height" constant="60" id="h55-6b-utH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                <state key="normal" title="SNAP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.88380537429999995" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="snapPhotoButton_Pressed:" destination="cbM-T3-e4L" eventType="touchUpInside" id="fWb-pq-7Ax"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l1l-wJ-an5">
+                                <rect key="frame" x="-1" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="ghL-it-fMH"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gZn-i1-LAB" secondAttribute="trailing" id="O2a-6e-Bio"/>
+                            <constraint firstItem="gZn-i1-LAB" firstAttribute="top" secondItem="6fW-Io-uqm" secondAttribute="bottom" constant="91" id="OXn-RD-13S"/>
+                            <constraint firstItem="Pri-jV-rdh" firstAttribute="trailing" secondItem="6fW-Io-uqm" secondAttribute="trailing" constant="130" id="iGs-8S-vbw"/>
+                            <constraint firstItem="6fW-Io-uqm" firstAttribute="leading" secondItem="Pri-jV-rdh" secondAttribute="leading" constant="130" id="oGf-gh-fCW"/>
+                            <constraint firstAttribute="bottom" secondItem="gZn-i1-LAB" secondAttribute="bottom" id="qH9-5l-xgJ"/>
+                            <constraint firstItem="gZn-i1-LAB" firstAttribute="leading" secondItem="EmW-SL-YIg" secondAttribute="leading" id="wDa-U9-O5L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pri-jV-rdh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HdW-Qy-0aQ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="snapPhotoButton" destination="6fW-Io-uqm" id="Sy4-sd-1qZ"/>
+                        <segue destination="AIO-NG-1d6" kind="show" identifier="GoToImagePhotoVC" id="6TI-Uk-qwc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bWe-Xv-LGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-508.125" y="164.78873239436621"/>
+        </scene>
+        <!--CameraGallery-->
+        <scene sceneID="hsP-QL-rQb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CameraGallery" id="aPo-ue-yAW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACw-WQ-MdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="673"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZAJ-Hc-ABu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g6j-Os-XZF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AuE-dN-N6h">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cbM-T3-e4L" kind="relationship" relationship="rootViewController" id="TMe-Ha-kjz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5LV-gp-IQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1380" y="162"/>
+        </scene>
+    </scenes>
+</document>

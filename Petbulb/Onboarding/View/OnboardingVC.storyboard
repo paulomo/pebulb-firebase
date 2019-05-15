@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4nr-Gf-mjp">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding PageVC-->
+        <scene sceneID="n2v-jA-xwk">
+            <objects>
+                <pageViewController storyboardIdentifier="OnboardingPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4nr-Gf-mjp" customClass="OnboardingPageVC" customModule="Petbulb" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQW-lq-aBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="185"/>
+        </scene>
+        <!--OnboardingVC-->
+        <scene sceneID="UXI-UT-T7g">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingVC" id="p2v-bc-QbT" customClass="OnboardingVC" customModule="Petbulb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eT2-qc-NDU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboardingimage1" translatesAutoresizingMaskIntoConstraints="NO" id="Ctb-Ct-8ty" userLabel="backgroundImage">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="347"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="347" id="6GO-8d-Iuv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cxu-fG-IkN" userLabel="logoImage">
+                                <rect key="frame" x="10" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="MZg-8m-IXO"/>
+                                    <constraint firstAttribute="height" constant="50" id="oLI-AP-tdB"/>
+                                </constraints>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="RvO-UP-75R">
+                                <rect key="frame" x="136" y="511" width="48" height="37"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="pageIndicatorTintColor" white="0.88380537429999995" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.23921568630000001" green="0.76078431369999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iec-Y5-Hwc" userLabel="pageDetails">
+                                <rect key="frame" x="26" y="417" width="268" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhu-Dr-XYD">
+                                <rect key="frame" x="0.0" y="353" width="320" height="215"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTC-BH-m51" userLabel="nextPageButton">
+                                        <rect key="frame" x="85" y="117" width="155" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="o0f-me-enV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="nextPageButton_Pressed:" destination="p2v-bc-QbT" eventType="touchUpInside" id="ClU-7M-9JZ"/>
+                                            <segue destination="y0x-Hc-TES" kind="presentation" id="6r8-5X-RVw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jTC-BH-m51" secondAttribute="bottom" constant="54" id="ELU-xp-bCc"/>
+                                    <constraint firstAttribute="trailing" secondItem="jTC-BH-m51" secondAttribute="trailing" constant="80" id="IoZ-4c-gwF"/>
+                                    <constraint firstItem="jTC-BH-m51" firstAttribute="leading" secondItem="qhu-Dr-XYD" secondAttribute="leading" constant="85" id="er2-1S-xa6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="iec-Y5-Hwc" secondAttribute="trailing" constant="10" id="1Jq-84-pqC"/>
+                            <constraint firstAttribute="trailing" secondItem="Ctb-Ct-8ty" secondAttribute="trailing" id="2fj-AE-p1v"/>
+                            <constraint firstItem="qhu-Dr-XYD" firstAttribute="leading" secondItem="eT2-qc-NDU" secondAttribute="leading" id="3nO-EI-EIf"/>
+                            <constraint firstItem="qhu-Dr-XYD" firstAttribute="top" secondItem="Ctb-Ct-8ty" secondAttribute="bottom" constant="6" id="5Jl-6G-nhi"/>
+                            <constraint firstItem="qhu-Dr-XYD" firstAttribute="top" secondItem="Ctb-Ct-8ty" secondAttribute="bottom" constant="6" id="Bgq-bt-Dhe"/>
+                            <constraint firstAttribute="trailing" secondItem="qhu-Dr-XYD" secondAttribute="trailing" id="Fi0-TK-GqV"/>
+                            <constraint firstItem="cxu-fG-IkN" firstAttribute="leading" secondItem="eT2-qc-NDU" secondAttribute="leading" constant="10" id="INZ-Nd-Gkz"/>
+                            <constraint firstItem="RvO-UP-75R" firstAttribute="top" secondItem="iec-Y5-Hwc" secondAttribute="bottom" constant="70" id="M2G-yI-dQH"/>
+                            <constraint firstItem="Ctb-Ct-8ty" firstAttribute="top" secondItem="eT2-qc-NDU" secondAttribute="top" id="POQ-JR-OBP"/>
+                            <constraint firstItem="iec-Y5-Hwc" firstAttribute="leading" secondItem="eT2-qc-NDU" secondAttribute="leadingMargin" constant="10" id="RGA-6k-4Q0"/>
+                            <constraint firstItem="Ctb-Ct-8ty" firstAttribute="top" secondItem="eT2-qc-NDU" secondAttribute="top" id="Vyu-wN-qH9"/>
+                            <constraint firstAttribute="trailing" secondItem="Ctb-Ct-8ty" secondAttribute="trailing" id="ctZ-sf-d0y"/>
+                            <constraint firstItem="Ctb-Ct-8ty" firstAttribute="leading" secondItem="eT2-qc-NDU" secondAttribute="leading" id="e4R-XB-d3D"/>
+                            <constraint firstItem="qhu-Dr-XYD" firstAttribute="top" secondItem="Ctb-Ct-8ty" secondAttribute="bottom" constant="6" id="eCa-ax-8xe"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="RvO-UP-75R" secondAttribute="bottom" constant="20" id="iEY-s1-Tj2"/>
+                            <constraint firstItem="RvO-UP-75R" firstAttribute="leading" secondItem="eT2-qc-NDU" secondAttribute="leadingMargin" constant="120" id="oRZ-gA-xCc"/>
+                            <constraint firstItem="cxu-fG-IkN" firstAttribute="top" secondItem="eT2-qc-NDU" secondAttribute="top" constant="20" id="ri3-gs-bYR"/>
+                            <constraint firstAttribute="bottom" secondItem="qhu-Dr-XYD" secondAttribute="bottom" id="sM3-3Z-BRK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RvO-UP-75R" secondAttribute="trailing" constant="120" id="wi5-sv-Sia"/>
+                            <constraint firstItem="Ctb-Ct-8ty" firstAttribute="leading" secondItem="eT2-qc-NDU" secondAttribute="leading" id="zqT-p1-vzq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="egc-O8-SEu"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="Ctb-Ct-8ty" id="TN1-f9-edr"/>
+                        <outlet property="contentLabel" destination="iec-Y5-Hwc" id="BuE-1g-iHd"/>
+                        <outlet property="nextPageButton" destination="jTC-BH-m51" id="9Ha-bj-STK"/>
+                        <outlet property="pageControl" destination="RvO-UP-75R" id="BOQ-2F-eRu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sI3-Gi-5rJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909.375" y="176.40845070422534"/>
+        </scene>
+        <!--PetType-->
+        <scene sceneID="ft9-s6-3yB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PetType" id="y0x-Hc-TES" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49F-cP-R1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517" y="177"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="onboardingimage1" width="375" height="400"/>
+    </resources>
+</document>
